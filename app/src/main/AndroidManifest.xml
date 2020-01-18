@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.quiz">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".awardQuizLevel3"></activity>
+        <activity android:name=".awardQuizFinalActivity" />
+        <activity android:name=".awardQuizInstructions" />
+        <activity android:name=".awardQuizLevels" />
+        <activity android:name=".countryQuizLevel3" />
+        <activity android:name=".countryQuizFinalActivity" />
+        <activity android:name=".countryQuizLevel" />
+        <activity android:name=".countryQuizInstructions" />
+        <activity android:name=".awardQuiz" />
+        <activity android:name=".countryQuiz" />
+        <activity android:name=".ClubQuizLevel3" />
+        <activity android:name=".PlayerQuizLevel3" />
+        <activity android:name=".playerQuizLevelInstructions" />
+        <activity android:name=".ClubQuizFinalActivity" />
+        <activity android:name=".ClubQuizLevels" />
+        <activity android:name=".ClubQuiz" />
+        <activity android:name=".PlayersQuizLevels" />
+        <activity android:name=".PlayersQuizFinalActivity" />
+        <activity android:name=".PlayersQuiz" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Highscores" />
+        <activity
+            android:name=".GameMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

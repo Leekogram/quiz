@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@drawable/background_gradient"
+    android:id="@+id/gamemodeContainer"
+    tools:context=".GameMode">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        tools:layout_editor_absoluteX="-57dp"
+        tools:layout_editor_absoluteY="-68dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/back"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/playerQuiz"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:elevation="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/player" />
+
+                <ImageButton
+                    android:id="@+id/clubQuiz"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:elevation="8dp"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/liverpool" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:text="Players"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:text="Club"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/countryQuiz"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:elevation="8dp"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/country" />
+
+                <ImageButton
+                    android:id="@+id/awardQuiz"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:elevation="8dp"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/awards" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:text="Countries"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/oval_shape"
+                    android:text="Award"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
